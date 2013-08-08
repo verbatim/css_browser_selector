@@ -39,6 +39,7 @@ function css_browser_selector(u) {
 		f = 'firefox',
 		s = 'safari',
 		o = 'opera',
+		d = 'desktop',
 		m = 'mobile',
 		a = 'android',
 		bb = 'blackberry',
@@ -97,7 +98,7 @@ function css_browser_selector(u) {
 				: ''
 
 			// mobile
-			, is("android|mobi|mobile|j2me|iphone|ipod|ipad|blackberry|playbook|kindle|silk") ? m : ''
+			, is("android|mobi|mobile|j2me|iphone|ipod|ipad|blackberry|playbook|kindle|silk") ? m : d
 
 			// os/platform
 			, is('j2me') ? 'j2me'
@@ -153,7 +154,7 @@ function css_browser_selector(u) {
 			widthClasses += " " + info + "_" + uaInfo[info]
 		}
 		;
-		html.className = ( html.className + widthClasses  );
+		html.className = (html.className + widthClasses);
 		return widthClasses;
 	} // screenSize
 
