@@ -148,7 +148,7 @@ function css_browser_selector(u) {
 		
 		]; // b
 		
-	console.debug(ua);
+	log(ua);
 
     function screenSize() {
 		var w = window.outerWidth || html.clientWidth;
